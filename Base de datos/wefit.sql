@@ -23,19 +23,19 @@ CREATE TABLE IF NOT EXISTS `Usuario` (
   `Sexo` VARCHAR(45) NOT NULL,
   `Altura` TINYINT(4) NOT NULL,
   `Grasa` VARCHAR(45) NOT NULL,
-  `Contraseña` VARCHAR(45) NOT NULL,
+  `Pass` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`Cedula`))
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Máquina`
+-- Table `mydb`.`Maquina`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Máquina` (
-  `idMáquina` INT NOT NULL,
+CREATE TABLE IF NOT EXISTS `Maquina` (
+  `idMaquina` INT NOT NULL,
   `Nombre` VARCHAR(45) NOT NULL,
   `Animacion` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`idMáquina`))
+  PRIMARY KEY (`idMaquina`))
 ENGINE = InnoDB;
 
 
@@ -45,7 +45,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `Entrenador` (
   `Cedula` INT NOT NULL,
   `Nombre` VARCHAR(45) NOT NULL,
-  `Contraseña` VARCHAR(45) NOT NULL,
+  `Pass` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`Cedula`))
 ENGINE = InnoDB;
 
@@ -62,16 +62,16 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Inscripción`
+-- Table `mydb`.`Inscripcion`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Inscripción` (
-  `idInscripción` INT NOT NULL,
+CREATE TABLE IF NOT EXISTS `Inscripcion` (
+  `idInscripcion` INT NOT NULL,
   `Fecha` VARCHAR(45) NOT NULL,
   `Cedula` INT NOT NULL,
   `Meses` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`idInscripción`),
-  INDEX `fk_Inscripción_Usuario_idx` (`Cedula` ASC),
-  CONSTRAINT `fk_Inscripción_Usuario`
+  PRIMARY KEY (`idInscripcion`),
+  INDEX `fk_Inscripcion_Usuario_idx` (`Cedula` ASC),
+  CONSTRAINT `fk_Inscripcion_Usuario`
     FOREIGN KEY (`Cedula`)
     REFERENCES `Usuario` (`Cedula`)
     ON DELETE NO ACTION
@@ -86,17 +86,17 @@ CREATE TABLE IF NOT EXISTS `Rutina` (
   `idRutina` INT NOT NULL,
   `Ejercicio_idEjercicio` INT NOT NULL,
   `Nombre` VARCHAR(45) NULL,
-  `idInscripción` INT NULL,
+  `idInscripcion` INT NULL,
   INDEX `fk_Rutina_Ejercicio1_idx` (`Ejercicio_idEjercicio` ASC),
-  INDEX `fk_Rutina_Inscripción1_idx` (`idInscripción` ASC),
+  INDEX `fk_Rutina_Inscripcion1_idx` (`idInscripcion` ASC),
   CONSTRAINT `fk_Rutina_Ejercicio1`
     FOREIGN KEY (`Ejercicio_idEjercicio`)
     REFERENCES `Ejercicio` (`idEjercicio`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Rutina_Inscripción1`
-    FOREIGN KEY (`idInscripción`)
-    REFERENCES `Inscripción` (`idInscripción`)
+  CONSTRAINT `fk_Rutina_Inscripcion1`
+    FOREIGN KEY (`idInscripcion`)
+    REFERENCES `Inscripcion` (`idInscripcion`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
