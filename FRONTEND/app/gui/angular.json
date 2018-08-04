@@ -23,7 +23,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "https://use.fontawesome.com/releases/v5.2.0/css/all.css"
             ],
             "scripts": []
           },
