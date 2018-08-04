@@ -2,15 +2,15 @@
   require 'phpqrcode/qrlib.php';
   $dir = 'temp/'
   if (!file_exists($dir)) {
-  $filename=$dir.'test.png'
+  $filename=$dir.'test.png';
 
   $tamaño = 10;
   $level= 'M';
   $frameSize=3;
-  $contenido='H';
+  $contenido='Hola mundo';
 
-  QRcode::png($contenido, $filename, $level, $tamaño $frameSize);
+  QRcode::png($contenido, $filename, $level, $tamanio $frameSize);
 
-  echo '<img src="'.$filename.'" />';  
+  echo '<img src="'.$filename.'" />';
   }
  ?>
