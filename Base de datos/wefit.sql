@@ -24,6 +24,7 @@ CREATE TABLE IF NOT EXISTS `Usuario` (
   `Altura` TINYINT(4) NOT NULL,
   `Grasa` VARCHAR(45) NOT NULL,
   `Pass` VARCHAR(45) NOT NULL,
+  `Estado` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`Cedula`))
 ENGINE = InnoDB;
 
