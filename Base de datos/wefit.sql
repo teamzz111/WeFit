@@ -33,7 +33,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Maquina`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Maquina` (
-  `idMaquina` INT NOT NULL,
+  `idMaquina` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(45) NOT NULL,
   `Animacion` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idMaquina`))
@@ -44,7 +44,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Entrenador`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Entrenador` (
-  `Cedula` INT NOT NULL,
+  `Cedula` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(45) NOT NULL,
   `Pass` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`Cedula`))
@@ -55,7 +55,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Ejercicio`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Ejercicio` (
-  `idEjercicio` INT NOT NULL,
+  `idEjercicio` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(45) NOT NULL,
   `Animacion` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idEjercicio`))
@@ -66,7 +66,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Inscripcion`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Inscripcion` (
-  `idInscripcion` INT NOT NULL,
+  `idInscripcion` INT NOT NULL AUTO_INCREMENT,
   `Fecha` VARCHAR(45) NOT NULL,
   `Cedula` INT NOT NULL,
   `Meses` VARCHAR(45) NOT NULL,
@@ -84,7 +84,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Rutina`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Rutina` (
-  `idRutina` INT NOT NULL,
+  `idRutina` INT NOT NULL AUTO_INCREMENT,
   `Ejercicio_idEjercicio` INT NOT NULL,
   `Nombre` VARCHAR(45) NULL,
   `idInscripcion` INT NULL,

@@ -1,6 +1,7 @@
 <?php
 
-include 'Conexion.php';
+require_once 'Conexion.php';
+
 
 if(!isset($_GET['opt'])) {
         $inputJSON = file_get_contents('php://input');
@@ -11,9 +12,8 @@ if(!isset($_GET['opt'])) {
         $Sexo = $input['sexo'];
         $Altura = $input['altura'];
         $Grasa = $input['grasa'];
-        $Pass= $input['pass']
+        $Pass= $input['pass'];
 
-        $con = new mysqli($host, $user, $pass, $db);
         $con->query("SET NAMES 'utf8'");
         if ($con->connect_error) {
             echo json_encode('false');
