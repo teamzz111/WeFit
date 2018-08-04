@@ -6,10 +6,6 @@
 
   $filename=$dir.'test.png';
 
-
-
-
-
   $tamanio = 10;
   $level= 'M';
   $frameSize=3;
