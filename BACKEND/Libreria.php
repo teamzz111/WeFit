@@ -6,10 +6,10 @@
 
   $filename=$dir.'test.png';
 
-  $tamanio = 10;
+  $tamanio = 5;
   $level= 'M';
-  $frameSize=3;
-  $contenido='Hola mundo';
+  $frameSize=60;
+  $contenido='X';
 
   QRcode::png($contenido, $filename, $level, $tamanio, $frameSize);
 
