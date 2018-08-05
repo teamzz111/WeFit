@@ -6,4 +6,5 @@
   $pass = "";
   $user = "root";
 
+  $con= mysqly_connect($host,$user,$pass,$db);
  ?>
