@@ -13,7 +13,9 @@ if(!isset($_GET['opt'])) {
             echo json_encode('false');
         }
         else{
-            $query1 = "INSERT INTO Incripcion VALUES (0,'comer', 'alvprro')";
+            $query1 = "INSERT INTO Ejercicio VALUES (0,'comer', 'alvprro')";
+            $rs=$query1;
+            
             if ($rs) {
                 echo json_encode('true');
             }
