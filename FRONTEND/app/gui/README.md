@@ -1,6 +1,11 @@
-# Gui
+# CdK Admin - FREE PREMIUM ANGULAR 5 MATERIAL DESIGN+FLEX LAYOUT ADMIN PANEL
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
+
+DEMO:https://newproject-5d731.firebaseapp.com
+
+contact: harikrishna266@gmail.com
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
 ## Development server
 
@@ -12,7 +17,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ## Running unit tests
 
