@@ -6,5 +6,5 @@
   $pass = "";
   $user = "root";
 
-  $con= mysqly_connect($host,$user,$pass,$db);
+  $con= mysqli_connect($host,$user,$pass,$db);
  ?>
