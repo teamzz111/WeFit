@@ -13,7 +13,6 @@ if(!isset($_GET['opt'])) {
             echo json_encode('false');
         }
         else{
-            $rs = $con->query($query);
             $query1 = "INSERT INTO Incripcion VALUES (0,'comer', 'alvprro')";
             if ($rs) {
                 echo json_encode('true');
