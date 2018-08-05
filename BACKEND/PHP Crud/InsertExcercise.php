@@ -13,9 +13,15 @@ if(!isset($_GET['opt'])) {
             echo json_encode('false');
         }
         else{
+<<<<<<< HEAD
             $query1 = "INSERT INTO Incripcion VALUES (0,$Nombre, $Animacion)";
             $rs = $con->query($query);
 
+=======
+            
+            $query = "INSERT INTO Ejercicio VALUES (0,'xddxdxdxdddxdd', 'Comino'    )";
+            $rs = $con->query($query);
+>>>>>>> 3d0607493424ef3fac46471df1e75efb23680e4d
             //el kpo es gei xddddd
             
             if ($rs) {
