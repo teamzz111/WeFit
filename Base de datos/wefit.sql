@@ -33,7 +33,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Maquina`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Maquina` (
-  `idMaquina` INT NOT NULL,
+  `idMaquina` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(45) NOT NULL,
   `Animacion` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idMaquina`))
@@ -44,7 +44,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Entrenador`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Entrenador` (
-  `Cedula` INT NOT NULL,
+  `Cedula` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(45) NOT NULL,
   `Pass` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`Cedula`))
@@ -55,7 +55,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Ejercicio`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Ejercicio` (
-  `idEjercicio` INT NOT NULL,
+  `idEjercicio` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(45) NOT NULL,
   `Animacion` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idEjercicio`))
@@ -66,7 +66,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Inscripcion`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Inscripcion` (
-  `idInscripcion` INT NOT NULL,
+  `idInscripcion` INT NOT NULL AUTO_INCREMENT,
   `Fecha` VARCHAR(45) NOT NULL,
   `Cedula` INT NOT NULL,
   `Meses` VARCHAR(45) NOT NULL,
@@ -85,22 +85,40 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Rutina` (
   `idRutina` INT NOT NULL,
-  `Ejercicio_idEjercicio` INT NOT NULL,
   `Nombre` VARCHAR(45) NULL,
   `idInscripcion` INT NULL,
-  INDEX `fk_Rutina_Ejercicio1_idx` (`Ejercicio_idEjercicio` ASC),
-  INDEX `fk_Rutina_Inscripcion1_idx` (`idInscripcion` ASC),
-  CONSTRAINT `fk_Rutina_Ejercicio1`
-    FOREIGN KEY (`Ejercicio_idEjercicio`)
-    REFERENCES `Ejercicio` (`idEjercicio`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Rutina_Inscripcion1`
+  PRIMARY KEY (`idRutina`),
+  INDEX `fk_RutinaDiaria_Inscripcion1_idx` (`idInscripcion` ASC),
+  CONSTRAINT `fk_RutinaDiaria_Inscripcion1`
     FOREIGN KEY (`idInscripcion`)
     REFERENCES `Inscripcion` (`idInscripcion`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`RutinaDiaria`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `RutinaDiaria` (
+  `idRutinaDiaria` INT NOT NULL,
+  `Nombre` VARCHAR(45) NULL,
+  `idRutina` INT NOT NULL,
+  `idEjercicio` INT NOT NULL,
+  INDEX `fk_Rutina_RutinaDiaria1_idx` (`idRutina` ASC),
+  INDEX `fk_RutinaDiaria_Ejercicio1_idx` (`idEjercicio` ASC),
+  CONSTRAINT `fk_Rutina_RutinaDiaria1`
+    FOREIGN KEY (`idRutina`)
+    REFERENCES `Rutina` (`idRutina`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_RutinaDiaria_Ejercicio1`
+    FOREIGN KEY (`idEjercicio`)
+    REFERENCES `Ejercicio` (`idEjercicio`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

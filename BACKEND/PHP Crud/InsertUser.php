@@ -1,6 +1,7 @@
 <?php
 
-include 'Conexion.php';
+require_once 'Conexion.php';
+
 
 if(!isset($_GET['opt'])) {
         $inputJSON = file_get_contents('php://input');
@@ -11,9 +12,9 @@ if(!isset($_GET['opt'])) {
         $Sexo = $input['sexo'];
         $Altura = $input['altura'];
         $Grasa = $input['grasa'];
-        $Pass= $input['pass']
-
-        $con = new mysqli($host, $user, $pass, $db);
+        $Pass= $input['pass'];
+        $Fecha = $input['fecha'];
+        $Meses = $input['meses'];
         $con->query("SET NAMES 'utf8'");
         if ($con->connect_error) {
             echo json_encode('false');
@@ -26,7 +27,17 @@ if(!isset($_GET['opt'])) {
         if ($resultado->num_rows>0) {
             echo json_encode('nel');
         }
-       
+        else{
+            $query = "INSERT INTO Usuario VALUES ($Cedula, '$Nombre', $Edad, $Sexo, $Altura, $Grasa, $Pass,'Activo')";
+            $rs = $con->query($query);
+            $query1 = "INSERT INTO Incripcion VALUES (0,$Fecha, $Cedula, $Meses)";
+            if ($rs) {
+                echo json_encode('true');
+            }
+            else {
+                echo json_encode('false');
+            }
         }
+    }
     
 ?>
