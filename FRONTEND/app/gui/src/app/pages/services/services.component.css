@@ -1,0 +1,58 @@
+.service-header {
+  height: 350px;
+  width: 100%;
+  padding: 30px 0 0 0;
+  color: white;
+}
+
+.service-header .content {
+  background-color: white;
+}
+
+.service-header h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.service-header p {
+  margin: 0;
+  text-align: center;
+}
+
+.service-header mat-divider {
+  border-top-color: white;
+}
+
+.service-card-content .service-card-container {
+  padding: 20px;
+}
+
+.service-card-content .service-card-container .service-card {
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: default;
+  background-color: white;
+  padding: 20px;
+}
+
+.service-card-content .service-card-container .service-card img {
+  height: 200px;
+}
+
+.service-card-content .service-card-container .service-card h3 {
+  margin: 0;
+}
+
+.service-card-content .service-card-container .service-card p {
+  margin: 0;
+  text-align: center;
+}
+
+.service-card-content .service-card-container .service-card:hover {
+  -webkit-transform: translate(0, -8px);
+          transform: translate(0, -8px);
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.16);
+}
+/*# sourceMappingURL=services.component.css.map */

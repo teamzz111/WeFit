@@ -1,0 +1,9 @@
+app-leaflet-map .map-container {
+  padding: 5px 0;
+  height: 600px;
+}
+
+app-leaflet-map #mapid {
+  height: 600px;
+}
+/*# sourceMappingURL=leaflet-map.component.css.map */

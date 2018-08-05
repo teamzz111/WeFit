@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACZ,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,KAAK;CACd;;AACD,AAAA,eAAe,CAAA;EACd,YAAY,EAAC,IAAI;CACjB;;AACD,AAAA,mBAAmB,CAAA;EAClB,gBAAgB,EAAE,OAAO;CACzB;;AACD,AAAA,UAAU,CAAA;EACT,YAAY,EAAC,IAAI;EACjB,aAAa,EAAC,IAAI;CAClB;;AACD,AAAA,eAAe,CAAC;EACf,OAAO,EAAE,kBAAkB;CAC3B;;AACD,AAAA,sBAAsB,CAAC;EACtB,MAAM,EAAE,iBAAiB;EACzB,gBAAgB,EAAE,KAAK;CACvB",
+    "sources": [
+        "reactive-forms.component.scss"
+    ],
+    "names": [],
+    "file": "reactive-forms.component.css"
+}

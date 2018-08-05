@@ -1,0 +1,125 @@
+.mail-detail {
+  padding: 24px 32px;
+}
+
+.mail-detail .mail-header .avatar {
+  height: 45px;
+  width: 45px;
+  margin-right: 20px;
+}
+
+.mail-detail .mail-header .from {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.mail-detail .mail-header .to {
+  color: #999;
+  font-size: 15px;
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+.mail-detail .mail-header .to mat-icon {
+  height: 16px;
+  width: 16px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.mail-detail .mail-header .mail-extra {
+  color: #999;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.mail-detail .mail-header .mail-extra .when {
+  vertical-align: middle;
+}
+
+.mail-detail .mail-header .mail-extra .options {
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+.mail-detail .mail-subject {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.mail-detail .mail-content {
+  margin-top: 32px;
+  margin-bottom: 240px;
+}
+
+.mail-detail .attachments-container .attachments-header {
+  color: #999;
+}
+
+.mail-detail .attachments-container .attachments-header .title {
+  font-size: 13px;
+  font-weight: 500;
+  margin-right: 24px;
+}
+
+.mail-detail .attachments-container .attachments-header .download {
+  margin-left: 24px;
+}
+
+.mail-detail .attachments-container .attachments {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.mail-detail .attachments-container .attachments .attachment {
+  margin-right: 12px;
+}
+
+.mail-detail .attachments-container .attachments .attachment img {
+  max-height: 140px;
+  max-width: 80px;
+}
+
+.mail-detail .respond {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 24px 32px;
+  border-top: 1px solid #EEE;
+  cursor: pointer;
+}
+
+.mail-detail .respond .avatar {
+  margin-right: 28px;
+}
+
+.mail-detail .respond .click-reply {
+  color: #999;
+}
+
+.mail-detail .respond .click-reply .semi-bold {
+  font-weight: 500;
+}
+
+.mail-detail .respond .reply {
+  color: #2B303B;
+  margin-right: 24px;
+}
+
+.mail-detail .respond .respond-buttons {
+  margin-top: 12px;
+}
+
+.mail-detail .respond .respond-buttons mat-icon {
+  font-size: 18px;
+  height: 18px;
+  width: 18px;
+  margin-left: 6px;
+}
+
+.mail-detail .respond .respond-buttons button {
+  margin-left: 12px;
+}
+/*# sourceMappingURL=detail.component.css.map */

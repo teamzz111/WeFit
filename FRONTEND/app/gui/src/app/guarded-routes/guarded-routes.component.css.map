@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACd,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,KAAK;CACd;;AACD,AAAA,iBAAiB,CAAC;EACjB,OAAO,EAAE,kBAAkB;EAC3B,MAAM,EAAC,KAAK;CACZ;;AAED,AAAA,cAAc,CAAC;EACd,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,KAAK;CACd;;AACD,AAAA,kBAAkB,CAAC;EAClB,MAAM,EAAE,iBAAiB;EACzB,gBAAgB,EAAE,KAAK;CACvB",
+    "sources": [
+        "guarded-routes.component.scss"
+    ],
+    "names": [],
+    "file": "guarded-routes.component.css"
+}

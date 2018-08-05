@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "google-map.component.scss"
+    ],
+    "names": [],
+    "file": "google-map.component.css"
+}

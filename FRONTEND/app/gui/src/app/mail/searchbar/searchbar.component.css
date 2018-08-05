@@ -1,0 +1,18 @@
+.search {
+  background: #fff;
+  min-height: 60px;
+  max-height: 60px;
+}
+
+.search mat-icon {
+  vertical-align: middle;
+  margin-right: 14px;
+  margin-left: 16px;
+}
+
+.search input {
+  border: 0;
+  height: 60px;
+  outline: none;
+}
+/*# sourceMappingURL=searchbar.component.css.map */

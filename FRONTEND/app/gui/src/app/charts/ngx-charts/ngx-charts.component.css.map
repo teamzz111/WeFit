@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "ngx-charts.component.scss"
+    ],
+    "names": [],
+    "file": "ngx-charts.component.css"
+}

@@ -1,0 +1,131 @@
+:host {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+
+.inbox {
+  background-color: white;
+}
+
+.inbox .header {
+  min-height: 200px;
+  max-height: 200px;
+  background: #039be5 url("/assets/bg20.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.inbox .footer {
+  width: 100%;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.inbox .footer h6 {
+  margin: 5px 0 0 0 !important;
+}
+
+.inbox .container {
+  margin-top: -200px;
+  max-height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+}
+
+.inbox .navigation {
+  padding: 42px 24px 0;
+}
+
+.inbox .navigation .title-container {
+  min-height: 56px;
+  max-height: 56px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: white;
+  font-size: 28px;
+}
+
+.inbox .navigation .title-container mat-icon {
+  margin-right: 4px;
+  height: 24px;
+  width: 24px;
+  font-size: 24px;
+  vertical-align: sub;
+}
+
+.inbox .navigation .title-container .title {
+  vertical-align: middle;
+}
+
+.inbox .navigation .compose-container {
+  margin: 52px 16px 0 12px;
+}
+
+.inbox .navigation .compose-container .compose {
+  padding-left: 20px;
+  padding-right: 32px;
+  width: 100%;
+}
+
+.inbox .navigation .compose-container .compose mat-icon {
+  margin-right: 10px;
+}
+
+.inbox .navigation .nav-list {
+  margin-top: 28px;
+  height: 400px;
+  overflow-y: auto;
+}
+
+.inbox .navigation .nav-list .nav-item {
+  color: #616161;
+  margin: 8px 0;
+}
+
+.inbox .navigation .nav-list .nav-item .nav-title .icon {
+  margin-right: 12px;
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
+}
+
+.inbox .navigation .nav-list .nav-item .nav-title .text {
+  font-size: 14px;
+}
+
+.inbox .navigation .nav-list .nav-item .nav-title .icon, .inbox .navigation .nav-list .nav-item .nav-title .text {
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.inbox .navigation .nav-list .nav-item.active {
+  color: #3F51B5;
+}
+
+.inbox .navigation mat-divider {
+  margin: 0 16px;
+}
+
+.inbox .content-container {
+  max-width: 100%;
+  height: 100%;
+}
+
+.inbox .content-container .search {
+  margin-top: 42px;
+}
+
+.inbox .content-container .mails-container {
+  margin-top: 43px;
+  background: white;
+  position: relative;
+  height: 100%;
+}
+
+@media only screen and (min-width: 1280px) {
+  .inbox .content-container {
+    max-width: calc(100% - 290px);
+  }
+}
+/*# sourceMappingURL=mail.component.css.map */

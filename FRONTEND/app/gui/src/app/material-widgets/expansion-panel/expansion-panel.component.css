@@ -1,0 +1,24 @@
+.expansion-header {
+  background-color: #327ebd;
+  color: white;
+  padding: 0 5px;
+}
+
+.expansion-container {
+  padding: 5px;
+}
+
+.expansion-component-holder {
+  border: 1px solid #327ebd;
+  background-color: white;
+}
+
+.expansion-component-holder h4 {
+  color: #327ebd;
+  margin: 14px 0;
+}
+
+.expansion-component-holder mat-divider {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=expansion-panel.component.css.map */

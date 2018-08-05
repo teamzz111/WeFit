@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "nvd3-charts.component.scss"
+    ],
+    "names": [],
+    "file": "nvd3-charts.component.css"
+}

@@ -1,0 +1,24 @@
+.datepicker-header {
+  background-color: #327ebd;
+  color: white;
+  padding: 0 5px;
+}
+
+.datepicker-container {
+  padding: 5px 15px 15px 15px;
+}
+
+.datepicker-component-holder {
+  border: 1px solid #327ebd;
+  background-color: white;
+}
+
+.datepicker-component-holder h4 {
+  color: #327ebd;
+  margin: 14px 0;
+}
+
+.datepicker-component-holder mat-divider {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=datepicker.component.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACb,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,KAAK;CACZ",
+    "sources": [
+        "filter-table.component.scss"
+    ],
+    "names": [],
+    "file": "filter-table.component.css"
+}

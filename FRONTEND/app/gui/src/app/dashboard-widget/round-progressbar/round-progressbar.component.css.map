@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "round-progressbar.component.scss"
+    ],
+    "names": [],
+    "file": "round-progressbar.component.css"
+}

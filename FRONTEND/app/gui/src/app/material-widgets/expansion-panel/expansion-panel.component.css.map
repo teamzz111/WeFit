@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EAChB,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,KAAK;CACd;;AACF,AAAA,oBAAoB,CAAC;EACnB,OAAO,EAAE,GAAG;CAEZ;;AACF,AAAA,2BAA2B,CAAC;EAC3B,MAAM,EAAE,iBAAiB;EACzB,gBAAgB,EAAE,KAAK;CAUvB;;AAZD,AAIC,2BAJ0B,CAI1B,EAAE,CAAC;EACF,KAAK,EAAE,OAAO;EACd,MAAM,EAAE,MAAM;CACd;;AAPF,AASC,2BAT0B,CAS1B,WAAW,CAAC;EACX,aAAa,EAAE,IAAI;CACnB",
+    "sources": [
+        "expansion-panel.component.scss"
+    ],
+    "names": [],
+    "file": "expansion-panel.component.css"
+}

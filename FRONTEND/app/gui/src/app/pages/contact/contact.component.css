@@ -1,0 +1,56 @@
+.full {
+  width: 100%;
+}
+
+.contact-list-container {
+  background-color: white;
+  padding: 10px;
+}
+
+.contact-list-container .contact-list {
+  height: 400px;
+  overflow: auto;
+}
+
+.contact-list-container .contact-list div {
+  margin: 0;
+}
+
+.contact-list-container .contact-list h3 {
+  margin: 0;
+}
+
+.contact-list-container .contact-list p {
+  margin: 0;
+}
+
+.contact-list-container .contact-list .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.contact-list-container .contact-list-header {
+  background-color: #eee;
+  padding: 10px;
+}
+
+.contact-list-container .contact-list-header div {
+  margin: auto;
+}
+
+.contact-add {
+  padding: 10px;
+  background: white;
+}
+
+.contact-add .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.contact-add h3 {
+  margin: auto;
+}
+/*# sourceMappingURL=contact.component.css.map */

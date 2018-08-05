@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,sBAAsB,CAAC;EAElB,gBAAgB,EAAC,KAAK;CAC1B",
+    "sources": [
+        "pie-chart.component.scss"
+    ],
+    "names": [],
+    "file": "pie-chart.component.css"
+}

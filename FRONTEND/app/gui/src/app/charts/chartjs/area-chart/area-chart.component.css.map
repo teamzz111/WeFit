@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,sBAAsB,CAAC;EAElB,gBAAgB,EAAC,KAAK;CAC1B",
+    "sources": [
+        "area-chart.component.scss"
+    ],
+    "names": [],
+    "file": "area-chart.component.css"
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EAET,gBAAgB,EAAC,KAAK;CAC1B",
+    "sources": [
+        "historical-bar-chart.component.scss"
+    ],
+    "names": [],
+    "file": "historical-bar-chart.component.css"
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAC;EACnB,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,KAAK;CACd;;AACD,AAAA,sBAAsB,CAAC;EACtB,OAAO,EAAE,kBAAkB;CAC3B;;AACD,AAAA,6BAA6B,CAAC;EAC7B,MAAM,EAAE,iBAAiB;EACzB,gBAAgB,EAAE,KAAK;CAUvB;;AAZD,AAIC,6BAJ4B,CAI5B,EAAE,CAAC;EACF,KAAK,EAAE,OAAO;EACd,MAAM,EAAE,MAAM;CACd;;AAPF,AASC,6BAT4B,CAS5B,WAAW,CAAC;EACX,aAAa,EAAE,IAAI;CACnB",
+    "sources": [
+        "slidetoggle.component.scss"
+    ],
+    "names": [],
+    "file": "slidetoggle.component.css"
+}

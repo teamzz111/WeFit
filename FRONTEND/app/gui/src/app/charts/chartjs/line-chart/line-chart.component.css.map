@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,sBAAsB,CAAC;EAElB,gBAAgB,EAAC,KAAK;CAC1B",
+    "sources": [
+        "line-chart.component.scss"
+    ],
+    "names": [],
+    "file": "line-chart.component.css"
+}

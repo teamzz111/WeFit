@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACb,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,KAAK;CACd;;AACD,AAAA,gBAAgB,CAAC;EAChB,OAAO,EAAE,kBAAkB;CAC3B;;AACD,AAAA,uBAAuB,CAAC;EACvB,MAAM,EAAE,iBAAiB;EACzB,gBAAgB,EAAE,KAAK;CACvB",
+    "sources": [
+        "feature-table.component.scss"
+    ],
+    "names": [],
+    "file": "feature-table.component.css"
+}
