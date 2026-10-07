@@ -26,7 +26,7 @@ export function highlightJsFactory(): any {
     ReactiveFormsModule,
     FormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAXTJwhYqJ6Pc7VXGRMTv40N1WRLqzuSNs'
+      apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
     }),
     HighlightJsModule.forRoot({
       provide: HIGHLIGHT_JS,
