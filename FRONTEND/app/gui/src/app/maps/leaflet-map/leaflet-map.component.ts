@@ -27,7 +27,7 @@ export class LeafletMapComponent implements OnInit {
 			zoom: 13,
 			zoomControl: false
 		});
-		L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoicmFteWFyYWoiLCJhIjoiY2phM3g5d3RkNnhuZTMzczJqNmF1bmQ5cSJ9.Ss2fPw0E6VMMVkKhUE1ksw', {
+		L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v10/tiles/256/{z}/{x}/{y}?access_token=YOUR_MAPBOX_ACCESS_TOKEN', {
 			minZoom: 0,
 			maxZoom: 30,
 			id: 'mapbox.streets'
